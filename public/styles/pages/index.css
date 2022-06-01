@@ -52,7 +52,6 @@ body {
 .menu__link.active {
     color: #4285f4;
     border-bottom: 2px solid #4285f4;
-
 }
 
 .menu__link:not(.active) {
@@ -94,7 +93,6 @@ body {
     padding: 56px 8px 0;
     align-items: center;
     flex: 1;
-
 }
 
 .content__logo {
@@ -127,7 +125,6 @@ body {
 .content__offer a {
     text-decoration: none;
     color: #1967d2;
-
 }
 
 /* footer */
@@ -165,7 +162,8 @@ body {
     .content {
         padding-top: 120px;
     }
-    .content__logo{
+
+    .content__logo {
         height: 150px;
     }
 }
