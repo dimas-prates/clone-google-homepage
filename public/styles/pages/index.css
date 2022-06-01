@@ -161,7 +161,7 @@ body {
 }
 
 /* Media Query */
-@media (min-width: 736) {
+@media (min-width: 736px) {
     .content {
         padding-top: 120px;
     }
