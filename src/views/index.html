@@ -6,18 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../public/images/favicon_google.png" type="image/png" />
-    <title>Clone Google home page</title>
+    <link rel="stylesheet" href="../../public/styles/pages/index.css">
+    <title>Clone Google Homepage</title>
 </head>
 
 <body>
-    <header>
-
+    <header class="menu">
+        <div class="menu__section left">
+            <img class="menu__icon" src="../../public/images/burger-icon.svg" alt="Burger icon">
+            <a class="menu__link active">All</a>
+            <a class="menu__link">Images</a>
+        </div>
+        <div class="menu__section right">
+            <img src="../../public/images/more-icon.svg" alt="More apps icon" class="menu__icon">
+            <div class="menu__profile">
+                <img src="https://i.pravatar.cc/100" alt="random pic profile" class="menu__avatar">
+                <img src="../../public/images/circle-frame.svg" alt="Profile frame" class="menu__avatar--frame">
+            </div>
+        </div>
     </header>
-    <main>
-
+    <main class="content">
+        <img src="../../public/images/logo.svg" alt="Google logo" class="content__logo">
+        <input type="text" class="content__search">
+        <div class="content__offer">
+            Made with ♥ by
+            <a href="https://youtube.com/rocketseat">Rocketseat</a> for studying
+        </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__section footer__location">
+            <span>Brazil</span>
+        </div>
+        <div class="footer_section footer__links">
+            <a>Settings</a>
+            <a>Privacy</a>
+            <a>Terms</a>
+        </div>
     </footer>
 </body>
 
