@@ -1,0 +1,43 @@
+/* Custom vars */
+:root {
+    --color-text-menu: #757575;
+    --color-text-blue-active: #4285f4;
+    --color-text-footer: #5f6368;
+    --color-border-search: #dadce0;
+    --color-border-footer: #e4e4e4;
+    --color-background-footer: #f2f2f2;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+input,
+button {
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media Query */
+@media (min-width: 736px) {
+    .content {
+        padding-top: 120px;
+    }
+
+    .content__logo {
+        height: 150px;
+    }
+}

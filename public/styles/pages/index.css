@@ -1,26 +1,3 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-*,
-input,
-button {
-    font-family: Arial, sans-serif;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 /* Styles */
 .menu {
     display: flex;
@@ -33,7 +10,6 @@ body {
 .menu__section {
     display: flex;
     align-items: center;
-
 }
 
 .menu__section.left {
@@ -44,14 +20,14 @@ body {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
-    color: #757575;
+    color: var(--color-text-menu);
     padding: 12px 8px;
     /* border-bottom: 2px solid rgba(255, 255, 255, 0); */
 }
 
 .menu__link.active {
-    color: #4285f4;
-    border-bottom: 2px solid #4285f4;
+    color: var(--color-text-blue-active);
+    border-bottom: 2px solid var(--color-text-blue-active);
 }
 
 .menu__link:not(.active) {
@@ -108,7 +84,7 @@ body {
     color: rgba(0, 0, 0, 0.87);
     background: transparent;
     border-radius: 25px;
-    border: 1px solid #dadce0;
+    border: 1px solid var(--color-border-search);
     outline: 0;
 }
 
@@ -124,7 +100,7 @@ body {
 
 .content__offer a {
     text-decoration: none;
-    color: #1967d2;
+    color: var(--color-text-blue-active);
 }
 
 /* footer */
@@ -132,16 +108,16 @@ body {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
-    background: #f2f2f2;
+    background: var(--color-background-footer);
 }
 
 .footer__section:not(:first-child) {
-    border-top: 1px solid #e4e4e4;
+    border-top: 1px solid var(--color-border-footer);
 }
 
 .footer__location {
     font-size: 16px;
-    color: #5f6368;
+    color: var(--color-text-footer);
     padding: 10px 12px;
 }
 
@@ -150,20 +126,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 13px;
-    color: #5f6368;
+    color: var(--color-text-footer);
 }
 
 .footer__links a:not(:first-child) {
     margin-left: 27px;
-}
-
-/* Media Query */
-@media (min-width: 736px) {
-    .content {
-        padding-top: 120px;
-    }
-
-    .content__logo {
-        height: 150px;
-    }
 }
